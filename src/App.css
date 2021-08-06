@@ -1,38 +1,119 @@
 .App {
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.date-time {
+  font-size: 18px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  display: row;
+}
+
+.weatherCard {
+  color: black;
+  width: 49vw;
+  height: 85vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.newsCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-gap: 20px;
+  color: black;
+  width: 49vw;
+  height: fit-content;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newsArticle {
+  background-color: tan;
+  padding: 30px;
+  margin-top: 5px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+.news__title {
+  padding-bottom: 10px;
+}
+
+.news__desc {
+  padding-top: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.search__input {
+  border: blue solid 1px;
+}
+
+.city {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.9em;
+}
+
+.icon {
+  width: 35%;
+  border: 2px solid blue;
+  border-radius: 10px;
+
+}
+
+.search__button {
+  margin-bottom: 15px !important;
+  color: black;
+  font-weight: bold;
+  border: solid black 1px;
+}
+
+.weather-data__city {
+  font-weight: bold;
+}
+
+.data__property {
+  display: flex;
+  background-color: tan !important;
+  justify-content: space-evenly !important;
+  margin-top: 25px !important;
+  font-size: 20px !important;
+  border: blue solid 2px;
+  border-radius: 15px;
+}
+
+.weather__tagline {
+  background-color: tan !important;
+  font-size: 20px !important;
+  border: blue solid 2px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.error {
+  font-size: 25px !important;
+}
+
+.footer {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+ .header__title{
+  color: red;  
 }

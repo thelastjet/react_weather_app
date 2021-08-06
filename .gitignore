@@ -12,6 +12,8 @@
 /build
 
 # misc
+NewsApiKey.js
+WeatherApiKey.js
 .DS_Store
 .env.local
 .env.development.local
